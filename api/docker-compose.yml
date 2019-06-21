@@ -1,0 +1,11 @@
+version: "3.6"
+
+services:
+  myapp:
+    build:
+      context: .
+    volumes:
+      - ./app:/app
+    working_dir: /app
+    environment:
+      PYTHONPATH: /app
